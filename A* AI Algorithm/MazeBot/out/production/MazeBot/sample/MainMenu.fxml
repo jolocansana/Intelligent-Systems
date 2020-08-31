@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenu">
+   <children>
+      <Text layoutX="55.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MazeBot">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input an number n for the size of your board (nxn)" textAlignment="CENTER" wrappingWidth="169.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userInput" layoutX="16.0" layoutY="107.0" prefHeight="27.0" prefWidth="169.0" />
+      <Button fx:id="confirmButton" layoutX="65.0" layoutY="150.0" mnemonicParsing="false" onAction="#onConfirm" text="Generate" />
+   </children>
+</AnchorPane>

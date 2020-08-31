@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="root" layoutX="50.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" snapToPixel="false">
+        <rowConstraints>
+            <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="351.0" minHeight="10.0" prefHeight="350.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+      </GridPane>
+      <Group layoutX="550.0" layoutY="50.0">
+         <children>
+            <Button fx:id="runAI" layoutX="475.0" layoutY="63.0" mnemonicParsing="false" onAction="#runBot" text="Run AI" />
+            <Text layoutX="457.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MazeBot">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <TextArea fx:id="coords" editable="false" layoutX="971.0" layoutY="163.0" prefHeight="372.0" prefWidth="161.0" wrapText="true" />
+      <Text layoutX="970.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a maze from the red point (the bot) to the green dot (the goal)." wrappingWidth="160.4844970703125" />
+      <Text layoutX="970.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLACK: Wall" wrappingWidth="160.4844970703125" />
+      <Text layoutX="970.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHITE: Space" wrappingWidth="160.4844970703125" />
+   </children>
+</AnchorPane>
